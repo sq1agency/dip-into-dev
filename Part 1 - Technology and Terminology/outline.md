@@ -28,10 +28,23 @@
 	* Our brains can't fit it all.
 	* Keeping up with our specialty is really hard.
 
-* So what does you guys do? Sit on the couches and play game all day?
+* So what does you guys do? Sit on the couches and play games all day?
 	* I wish!
 	* We do development, which means that we take mockups, ideas, and concepts and turn them into products.
+	* Our products happen to be web applications or web sites (we'll use these terms interchangeably)
+
+* What's a web application?
+	* It's a collection of text files that computers can understand.
+	* Aren't there images and fonts too? Yes.  Don't be smart.
+
+* Text files?  That's not very descriptive.  What kind of text files?
+
 
 ## Section 2 - Front End
+
+* So wait, I saw the picture, but what do you mean the "client"
+	* When a user visits a web page, that users's computer can read data, format that data, and perform actions with that data
+	* Front End developers deal with things that happened exclusively on the client's computer (or the front end)
+
 
 ## Section 3 - Back End
