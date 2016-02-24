@@ -17,6 +17,12 @@
 	* Back End refers to things that happen on the server's side
 	* Cloud refers to everything in between
 
+* So wait, I saw the picture, but what do you mean the "client" and "server"
+	* When a user visits a web page, that users's computer can read data, format that data, and perform actions with that data
+	* Front End developers deal with things that happen exclusively on the client's computer (or the front end)
+	* Back End developers deal with things that happen on the server.
+
+
 * You guys all look the same, so if I need a developer, I can just grab one, right?
 	* Nope!
 	* We typically differentiates ourselves according to our specialties
@@ -38,13 +44,12 @@
 	* Aren't there images and fonts too? Yes.  Don't be smart.
 
 * Text files?  That's not very descriptive.  What kind of text files?
-
+	* Well that depends on the "stack" that you are using.  (LAMP/MEAN/etc)
+	* What stack do WE use? (leads into front end)
 
 ## Section 2 - Front End
 
-* So wait, I saw the picture, but what do you mean the "client"
-	* When a user visits a web page, that users's computer can read data, format that data, and perform actions with that data
-	* Front End developers deal with things that happened exclusively on the client's computer (or the front end)
+
 
 
 ## Section 3 - Back End
