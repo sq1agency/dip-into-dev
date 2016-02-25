@@ -189,7 +189,17 @@ body {
 	const newThing = `${oneThing} ${anotherThing}`;
 	console.log(newThing);
 	```
-	* PHP was originally created in 1994, and powers many well established web sites.
-		* Facebook
-		* Wikipedia
-		* Wordpress
+	* Node.js was originally created in 2009, and is used by many major corporations.
+		* IBM
+		* Netflix
+		* Walmart
+
+	* All the others
+	```
+	probably something semi-cryptic and hard to read
+	I don't know Java or Ruby on Rails though, so...
+	sorry :/
+	```
+
+	* There are a bunch of backend languages, but PHP and Node.js are the two major ones we use here.
+	* Most of them look similar, and all kind of do the same things.  Each has advantages and disadvantages, but that's outside the scope of this training.
