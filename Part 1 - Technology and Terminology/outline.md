@@ -27,7 +27,9 @@
 * You guys all look the same, so if I need a developer, I can just grab one, right?
 	* Nope!
 	* We typically differentiates ourselves according to our specialties
-	* Front End, Back End, Full Stack
+	* Talk about being ramped up counting for a lot (show stats with line counts and other "impressive" metrics)
+	* Front End, Back End
+	* And even inside of those categories, there are specialties within those.
 
 * Why can't you just get good at all of it?
 	* There's just too much!
@@ -236,7 +238,6 @@ System.out.println(newThing);
 ```
 
 ##### Ruby
-* See Pierce Moore
 ```ruby
 def helloWorld
 	@oneThing = 'hello'
@@ -248,6 +249,12 @@ end
 <h1><%= @newThing %></h1>
 ```
 
+##### .NET
+* The worst one.
+```.NET
+confusing things go here.
+```
+
 * There are a bunch of backend languages, but PHP and Node.js are the two major ones we use here.
 * Most of them look similar, and all kind of do the same things.  Each has advantages and disadvantages, but that's outside the scope of this training.
 
@@ -255,10 +262,11 @@ end
 
 * Where does all of this code live?
 * Amazon Web Services (AWS)
+* Talk to Jesse about AWS (selling)
 
 ## Section 5 - Other Tools
 
-### Text Editor
+### Text Editor/IDE
 
 * So if code is all just text files anyway, I can just use Word, right?
 [ Insert picture of source code written in Word]
@@ -267,11 +275,16 @@ end
 	* Names: Sublime, Atom, PHPStorm/WebStorm
 * Explain syntax highlighting
 [ Insert picture of the same code, but in Atom]
+* Dreamweaver, and why it's awful.
+* IDE's, what are they, and where are they used?
 
 ### Version Control
 
 * Names: Git, Mercurial, SVN, Team Foundation Server
+* Version control is an absolutely critical part when working with a team, and even though version control makes our lives easier, more people = more harder.
+* Talk about branching/branches, and why master/production dev/dev, etc.
 * Why do we need it: It makes it almost impossible to ever lose work by savings *EVERY* change to *EVERY* file in a project.
+* Talk about which branch means what, URLs, envs. etc.
 	* Want to blame someone for your project breaking over the weekend?  Version control can do that.
 	* Want to see how something worked because someone broke it?  Version control can do that.
 	* Want to completely undo your changes that totally worked on your local machine but totally don't work anywhere else?  Version control can do that.
