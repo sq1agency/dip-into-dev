@@ -113,7 +113,7 @@ body {
 	* A database is a program that stores and retrieves information.
 	* SQL/Relational
 		* Names: MySQL, MSSQL, Postgres, MariaDB
-		* What is it good for: Storing and retrieving data that is related to other database
+		* What is it good for: Storing and retrieving data that is related to other data
 		* What does that look like:
 		```
 		Car Table:
@@ -142,7 +142,7 @@ body {
 		# 144: 2013
 		...
 		```
-		* The above example lets us refer to a specific card by ID, but also get ALL cars that share certain properties (get all cars with green paint, made by lexus)
+		* The above example lets us refer to a specific car by ID, but also get ALL cars that share certain properties (get all cars with green paint, made by lexus)
 
 	* NoSQL/Schema-less
 		* Names: MongoDB, CouchDB, RethinkDB, Cassandra
@@ -157,3 +157,39 @@ body {
 			}
 		}
 		```
+		* The above example describes the same car, but in JSON.  Cars happen to not be a great example, but here we are.
+		* Proper uses would be things that are constantly changing, or different every time (draw something).
+
+* Languages
+	* Much like JavaScript is used to provide interactivity to the front end of things, back end languages handle interactivity on the back end.
+
+	* Names: PHP, JavaScript (Node.js), Java, Ruby on Rails
+	* What do they look like?
+
+	* PHP:
+	```
+	<?PHP
+		// this is a comment that describes what this code does
+		$oneThing = "hello";
+		$anotherThing = "world";
+		$newThing = $oneThing . " " . $anotherThing;
+		echo $newThing;
+	?>
+	```
+	* PHP was originally created in 1994, and powers many well established web sites.
+		* Facebook
+		* Wikipedia
+		* Wordpress
+
+	* JavaScript/Node.js:
+	```
+	// this is a comment that describes what this code does
+	const oneThing = "hello";
+	const anotherThing = "world";
+	const newThing = `${oneThing} ${anotherThing}`;
+	console.log(newThing);
+	```
+	* PHP was originally created in 1994, and powers many well established web sites.
+		* Facebook
+		* Wikipedia
+		* Wordpress
