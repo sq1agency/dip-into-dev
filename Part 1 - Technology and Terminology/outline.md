@@ -251,9 +251,15 @@ end
 * There are a bunch of backend languages, but PHP and Node.js are the two major ones we use here.
 * Most of them look similar, and all kind of do the same things.  Each has advantages and disadvantages, but that's outside the scope of this training.
 
-## Section 4 - Other Tools
+## Section 4 - Cloud (DevOps)
+
+* Where does all of this code live?
+* Amazon Web Services (AWS)
+
+## Section 5 - Other Tools
 
 ### Text Editor
+
 * So if code is all just text files anyway, I can just use Word, right?
 [ Insert picture of source code written in Word]
 * That's pretty horrible.
@@ -276,7 +282,7 @@ end
 	* Including this one!
 	* Give out link.
 
-## Section 5 - Wrap Up / Questions
+## Section 6 - Wrap Up / Questions
 
 * Recap / Give out link
 * Questions?
