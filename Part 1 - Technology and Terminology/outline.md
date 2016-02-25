@@ -1,5 +1,7 @@
 # Part 1 - Technology and Terminology Outline
 
+`HELLO WORLD!`
+
 ## Section 1 - Overview
 * What's the purpose of this training?
 	* Help everyone do their jobs better
@@ -13,7 +15,7 @@
 
 * What is "front end" and "back end", besides an excuse to giggle in meetings?
 	* Client <--> Cloud <--> Server
-	* Front End refers to things that happen on the client's side
+	* Front End refers to things that happen on the client's side (the browser)
 	* Back End refers to things that happen on the server's side
 	* Cloud refers to everything in between
 
@@ -37,6 +39,7 @@
 	* I wish!
 	* We do development, which means that we take mockups, ideas, and concepts and turn them into products.
 	* Our products happen to be web applications or web sites (we'll use these terms interchangeably)
+	* We also collaborate and bounce ideas off of each other so we do tend to talk a lot
 
 * What's a web application?
 	* It's a collection of text files that computers can understand.
@@ -49,10 +52,11 @@
 ## Section 2 - Front End
 
 * Web application structure
-	* HTML
-	* CSS
-	* JavaScript
+	* HTML - Basic outline and structure of a web page
+	* CSS - Make it look all pretty
+	* JavaScript - Make it do cool things
 
+### HTML
 * HTML controls the structure of the web application.
 	* Do you want to type a sentence and make a _strong_ point about a word or phrase?  Use the `<strong>` tag.
 	* Do you want to take several sentences and make them into a _paragraph_?  Use the `<p>` tag.
@@ -61,19 +65,25 @@
 	* HTML is nothing but tags with information inside of them.
 	* Show example and talk about closing tags and possibly indention?
 
-```
-<body>
-	<div>
-		<p>
-		Paragraph 1 goes here, and here's some <strong>strong</strong> text.
-		</p>
-		<p>
-		Paragraph 2 goes here, and here's some <strong>strong</strong> text in it too.
-		</p>
-	</div>
-</body>
+```html
+<html>
+	<head>
+		<title>Example Web Page</title>
+	</head>
+	<body>
+		<div>
+			<p>
+				Paragraph 1 goes here, and here's some <strong>strong</strong> text.
+			</p>
+			<p>
+				Paragraph 2 goes here, and here's some <strong>strong</strong> text in it too.
+			</p>
+		</div>
+	</body>
+</html>
 ```
 
+### CSS
 * CSS controls the look and feel of the web application
 	* Do you want to make that _strong_ text from earlier red? Use `color: red;`.
 	* Do you want to center a _paragraph_? Use `text-align: center;`.
@@ -81,25 +91,39 @@
 	* CSS is a collection of properties that we can give HTML tags to change their look and feel.
 	* Show example and explain how properties can be grouped by element or class?
 
-```
+```css
 strong {
+	/* color: #FF0000; */
 	color: red;
 }
 
 p {
+	/* color: #FFFFFF */
+	color: white;
 	text-align: center
 }
 
 body {
+	/* background-color: #0000FF */
 	background-color: blue;
 }
 ```
 
+### JavaScript
 * JavaScript (JS) controls interactivity in the web application
 	* Do you want to assign a word to a thing (variable) that you can use in place of it? Use `const oneThing = "hello";`
 	* Do you want to take one thing (string/int) and combine it with another? Use `newThing = oneThing + anotherThing;`
 	* Do you want to tell the user about that new thing? Use `alert("Check out this thing! --> " + newThing);` (talk concatenation?)
 	* JavaScript is wonderful, but not always terribly concise.  HTMl and CSS and great for single one line examples of basic functionality, but that's not something JavaScript excels at.  Stay tuned for more examples.
+
+```javascript
+const oneThing = "hello";
+const anotherThing = "world";
+
+let newThing = oneThing + ' ' + anotherThing;
+
+alert(newThing);
+```
 
 ## Section 3 - Back End
 
@@ -111,104 +135,131 @@ body {
 
 * Just like front end refers to everything that happens on the client (not a singular thing), back end refers to everything that happens on the server side.
 
-* Databases
-	* A database is a program that stores and retrieves information.
-	* SQL/Relational
-		* Names: MySQL, MSSQL, Postgres, MariaDB
-		* What is it good for: Storing and retrieving data that is related to other data
-		* What does that look like:
-		```
-		Car Table:
-		 - ID: 18354
-		 - Mfg: 3
-		 - Color: 1
-		 - Year: 143
+### Databases
 
-		Mfg Table:
-		...
-		# 2: Honda
-		# 3: Toyota
-		# 4: Lexus
-		...
+* A database is a program that stores and retrieves information.
 
-		Color Table:
-		# 1: Red
-		# 2: Blue
-		# 3: Green
-		...
+#### SQL/Relational
+* Names: MySQL, MSSQL, Postgres, MariaDB
+* What is it good for: Storing and retrieving data that is related to other data
+* What does that look like:
+```
+Car Table:
+ - ID: 18354
+ - Mfg: 3
+ - Color: 1
+ - Year: 143
 
-		Year Table:
-		...
-		# 142: 2011
-		# 143: 2012
-		# 144: 2013
-		...
-		```
-		* The above example lets us refer to a specific car by ID, but also get ALL cars that share certain properties (get all cars with green paint, made by lexus)
+Mfg Table:
+...
+# 2: Honda
+# 3: Toyota
+# 4: Lexus
+...
 
-	* NoSQL/Schema-less
-		* Names: MongoDB, CouchDB, RethinkDB, Cassandra
-		* What is it good for: Storing and retrieving data that isn't a good fit for relational databases
-		* What does it look like:
-		```
-		{
-			"car": {
-				"mfg": "Toyota",
-				"color": "Red",
-				"year": 2012
-			}
-		}
-		```
-		* The above example describes the same car, but in JSON.  Cars happen to not be a great example, but here we are.
-		* Proper uses would be things that are constantly changing, or different every time (draw something).
+Color Table:
+# 1: Red
+# 2: Blue
+# 3: Green
+...
 
-* Languages
-	* Much like JavaScript is used to provide interactivity to the front end of things, back end languages handle interactivity on the back end.
+Year Table:
+...
+# 142: 2011
+# 143: 2012
+# 144: 2013
+...
+```
+* The above example lets us refer to a specific car by ID, but also get ALL cars that share certain properties (get all cars with green paint, made by Lexus)
 
-	* Names: PHP, JavaScript (Node.js), Java, Ruby on Rails
-	* What do they look like?
+#### NoSQL/Schema-less
+* Names: MongoDB, CouchDB, RethinkDB, Cassandra
+* What is it good for: Storing and retrieving data that isn't a good fit for relational databases
+* What does it look like:
+```json
+{
+	"car": {
+		"mfg": "Toyota",
+		"color": "Red",
+		"year": 2012
+	}
+}
+```
+* The above example describes the same car, but in JSON.  Cars happen to not be a great example, but here we are.
+* Proper uses would be things that are constantly changing, or different every time (draw something).
 
-	* PHP:
-	```
-	<?PHP
-		// this is a comment that describes what this code does
-		$oneThing = "hello";
-		$anotherThing = "world";
-		$newThing = $oneThing . " " . $anotherThing;
-		echo $newThing;
-	?>
-	```
-	* PHP was originally created in 1994, and powers many well established web sites.
-		* Facebook
-		* Wikipedia
-		* Wordpress
+### Languages
+* Much like JavaScript is used to provide interactivity to the front end of things, back end languages handle interactivity on the back end.
 
-	* JavaScript/Node.js:
-	```
+* Names: PHP, JavaScript (Node.js), Java, Ruby on Rails
+* What do they look like?
+
+##### PHP:
+```php
+<?php
 	// this is a comment that describes what this code does
-	const oneThing = "hello";
-	const anotherThing = "world";
-	const newThing = `${oneThing} ${anotherThing}`;
-	console.log(newThing);
-	```
-	* Node.js was originally created in 2009, and is used by many major corporations.
-		* IBM
-		* Netflix
-		* Walmart
+	$oneThing = "hello";
+	$anotherThing = "world";
+	$newThing = $oneThing . " " . $anotherThing;
 
-	* All the others
-	```
-	probably something semi-cryptic and hard to read
-	I don't know Java or Ruby on Rails though, so...
-	sorry :/
-	```
+	echo $newThing;
+?>
+```
+* PHP was originally created in 1994, and powers many well established web sites.
+	* Facebook
+	* Wikipedia
+	* Wordpress
 
-	* There are a bunch of backend languages, but PHP and Node.js are the two major ones we use here.
-	* Most of them look similar, and all kind of do the same things.  Each has advantages and disadvantages, but that's outside the scope of this training.
+##### JavaScript/Node.js:
+```javascript
+// this is a comment that describes what this code does
+const oneThing = "hello";
+const anotherThing = "world";
+const newThing = `${oneThing} ${anotherThing}`;
 
-## Section 4 - Other Tools
+console.log(newThing);
+```
+* Node.js was originally created in 2009, and is used by many major corporations.
+	* IBM
+	* Netflix
+	* Walmart
+
+#### All the others (Java, Ruby on Rails, etc.)
+
+##### Java
+```java
+String oneThing = "hello";
+String anotherThing = "world";
+String newThing = oneThing + " " + anotherThing;
+
+System.out.println(newThing);
+```
+
+##### Ruby
+* See Pierce Moore
+```ruby
+def helloWorld
+	@oneThing = 'hello'
+	@anotherThing = 'world'
+	@newThing = "#{oneThing} #{anotherThing}"
+end
+```
+```html
+<h1><%= @newThing %></h1>
+```
+
+* There are a bunch of backend languages, but PHP and Node.js are the two major ones we use here.
+* Most of them look similar, and all kind of do the same things.  Each has advantages and disadvantages, but that's outside the scope of this training.
+
+## Section 4 - Cloud (DevOps)
+
+* Where does all of this code live?
+* Amazon Web Services (AWS)
+
+## Section 5 - Other Tools
 
 ### Text Editor
+
 * So if code is all just text files anyway, I can just use Word, right?
 [ Insert picture of source code written in Word]
 * That's pretty horrible.
@@ -231,7 +282,7 @@ body {
 	* Including this one!
 	* Give out link.
 
-## Section 5 - Wrap Up / Questions
+## Section 6 - Wrap Up / Questions
 
 * Recap / Give out link
 * Questions?
