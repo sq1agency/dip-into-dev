@@ -205,3 +205,24 @@ body {
 
 	* There are a bunch of backend languages, but PHP and Node.js are the two major ones we use here.
 	* Most of them look similar, and all kind of do the same things.  Each has advantages and disadvantages, but that's outside the scope of this training.
+
+## Section 4 - Version Control
+
+* Version Control isn't "programming", but more a set of tools that is critical to getting our jobs done and working in a team.
+
+* Names: Git, Mercurial, SVN, Team Foundation Server
+* Why do we need it: It makes it almost impossible to ever lose work by savings *EVERY* change to *EVERY* file in a project.
+	* Want to blame someone for your project breaking over the weekend?  Version control can do that.
+	* Want to see how something worked because someone broke it?  Version control can do that.
+	* Want to completely undo your changes that totally worked on your local machine but totally don't work anywhere else?  Version control can do that.
+
+* GitHub
+	* GitHub is the site we use to store all of our projects.
+	* Most of our projects are closed source (for only us to see and use), but some are open source (open for the community to use).
+	* Including this one!
+	* Give out link.
+
+## Section 5 - Wrap Up / Questions
+
+* Recap / Give out link
+* Questions?
