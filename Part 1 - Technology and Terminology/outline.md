@@ -100,3 +100,60 @@ body {
 	* Do you want to tell the user about that new thing? Use `alert("Check out this thing! --> " + newThing);` (talk concatenation?)
 
 ## Section 3 - Back End
+
+* So front end technologies are super powerful.  What can't they do?  If we can do all that on the front end, why do we need back end developers at all?
+	* Because I'm one and I need to get paid.
+	* The backend of a web application is a great place for sensitive data that you wouldn't want to expose to the client (medical/banking/etc)
+	* It's a good place to store proprietary technology (google's algorithm, it's the secret sauce)
+	* Significantly more giggling compared to front end
+
+* Just like front end refers to everything that happens on the client (not a singular thing), back end refers to everything that happens on the server side.
+
+* Databases
+	* A database is a program that stores and retrieves information.
+	* SQL/Relational
+		* Names: MySQL, MSSQL, Postgres, MariaDB
+		* What is it good for: Storing and retrieving data that is related to other database
+		* What does that look like:
+		```
+		Car Table:
+		 - ID: 18354
+		 - Mfg: 3
+		 - Color: 1
+		 - Year: 143
+
+		Mfg Table:
+		...
+		# 2: Honda
+		# 3: Toyota
+		# 4: Lexus
+		...
+
+		Color Table:
+		# 1: Red
+		# 2: Blue
+		# 3: Green
+		...
+
+		Year Table:
+		...
+		# 142: 2011
+		# 143: 2012
+		# 144: 2013
+		...
+		```
+		* The above example lets us refer to a specific card by ID, but also get ALL cars that share certain properties (get all cars with green paint, made by lexus)
+
+	* NoSQL/Schema-less
+		* Names: MongoDB, CouchDB, RethinkDB, Cassandra
+		* What is it good for: Storing and retrieving data that isn't a good fit for relational databases
+		* What does it look like:
+		```
+		{
+			"car": {
+				"mfg": "Toyota",
+				"color": "Red",
+				"year": 2012
+			}
+		}
+		```
