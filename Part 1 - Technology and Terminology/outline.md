@@ -96,8 +96,10 @@ body {
 ```
 
 * JavaScript (JS) controls interactivity in the web application
+	* Do you want to assign a word to a thing (variable) that you can use in place of it? Use `const oneThing = "hello";`
 	* Do you want to take one thing (string/int) and combine it with another? Use `newThing = oneThing + anotherThing;`
 	* Do you want to tell the user about that new thing? Use `alert("Check out this thing! --> " + newThing);` (talk concatenation?)
+	* JavaScript is wonderful, but not always terribly concise.  HTMl and CSS and great for single one line examples of basic functionality, but that's not something JavaScript excels at.  Stay tuned for more examples.
 
 ## Section 3 - Back End
 
