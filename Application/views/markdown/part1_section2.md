@@ -1,5 +1,4 @@
-## Front End
-
+### Front End
 * Web application structure
   * HTML - Basic outline and structure of a web page
   * CSS - Make it look all pretty
@@ -103,3 +102,5 @@ alert(newThing);
 ### Front End - JavaScript
 
 * JavaScript is wonderful, but not always terribly concise.  HTMl and CSS and great for single one line examples of basic functionality, but that's not something JavaScript excels at.  Stay tuned for more examples.
+
+---
