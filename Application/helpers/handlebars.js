@@ -53,6 +53,8 @@ Handlebars.registerHelper('code', function(language, options) {
 	convertedCode = convertedCode.replace(/\*/g, "&ast;");
 	// convert tabs to spaces
 	convertedCode = convertedCode.replace(/\t/g, "  ");
+	// convert new lines to non breaking spaces and new lines
+	convertedCode = convertedCode.replace(/\n\n/g, "\n&nbsp;\n");
 	const returnCode = `<pre><code class="${language}" data-notrim>${convertedCode}</pre></code>`;
   return returnCode;
 });
