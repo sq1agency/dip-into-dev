@@ -75,10 +75,10 @@
 	<body>
 		<div>
 			<p>
-				Paragraph 1 goes here, and here's some <strong>strong</strong> text.
+				Paragraph 1 goes here, and there's <strong>strong</strong> text.
 			</p>
 			<p>
-				Paragraph 2 goes here, and here's some <strong>strong</strong> text in it too.
+				Paragraph 2 goes here, and there's <strong>strong</strong> text too.
 			</p>
 		</div>
 	</body>

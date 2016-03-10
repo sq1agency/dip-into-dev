@@ -1,7 +1,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="/assets/css/reveal.css">
-    <link rel="stylesheet" href="/assets/css/theme/white.css">
+    <link rel="stylesheet" href="/assets/css/theme/night.css">
+		<link rel="stylesheet" href="/assets/css/theme/hljs-monokai-sublime.css">
   </head>
   <body>
     <div class="reveal">
@@ -9,9 +10,20 @@
 				{{{body}}}
       </div>
     </div>
+		<script src="/assets/js/head.min.js"></script>
     <script src="/assets/js/reveal.js"></script>
     <script>
-      Reveal.initialize();
+		Reveal.initialize({
+			center: false,
+			slideNumber: 'c/t',
+			dependencies: [
+				// Interpret Markdown in <section> elements
+				{ src: '/assets/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: '/assets/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				// Syntax highlight for <code> elements
+				{ src: '/assets/js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
     </script>
   </body>
 </html>
