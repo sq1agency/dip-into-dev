@@ -49,6 +49,8 @@ Handlebars.registerHelper('code', function(language, options) {
 	// remove the < and > tags
 	convertedCode = convertedCode.replace(/</g, "&lt;");
 	convertedCode = convertedCode.replace(/>/g, "&gt;");
+	// convert asterisk
+	convertedCode = convertedCode.replace(/\*/g, "&ast;");
 	// convert tabs to spaces
 	convertedCode = convertedCode.replace(/\t/g, "  ");
 	const returnCode = `<pre><code class="${language}" data-notrim>${convertedCode}</pre></code>`;
