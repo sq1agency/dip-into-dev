@@ -1,21 +1,24 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="/assets/css/reveal.css">
-    <link rel="stylesheet" href="/assets/css/theme/night.css">
+	<head>
+		<link rel="stylesheet" href="/assets/css/reveal.css">
+		<link rel="stylesheet" href="/assets/css/theme/night.css">
 		<link rel="stylesheet" href="/assets/css/theme/hljs-monokai-sublime.css">
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
 				{{{body}}}
-      </div>
-    </div>
+			</div>
+		</div>
 		<script src="/assets/js/head.min.js"></script>
-    <script src="/assets/js/reveal.js"></script>
-    <script>
+		<script src="/assets/js/reveal.js"></script>
+		<script>
 		Reveal.initialize({
 			center: false,
 			slideNumber: 'c/t',
+			transition: 'none',
+			parallaxBackgroundImage: '/assets/img/reveal-parallax-1.jpg',
+			parallaxBackgroundSize: '2100px 900px',
 			dependencies: [
 				// Interpret Markdown in <section> elements
 				{ src: '/assets/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
@@ -24,6 +27,6 @@
 				{ src: '/assets/js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 			]
 		});
-    </script>
-  </body>
+		</script>
+	</body>
 </html>
