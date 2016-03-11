@@ -24,7 +24,8 @@
 				{ src: '/assets/js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 				{ src: '/assets/js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 				// Syntax highlight for <code> elements
-				{ src: '/assets/js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				{ src: '/assets/js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: '/assets/js/notes.js', async: true }
 			]
 		});
 		</script>
