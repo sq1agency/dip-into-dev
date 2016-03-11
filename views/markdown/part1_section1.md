@@ -1,7 +1,8 @@
-## Dip Into Dev
-### Part 1: Technology and Terminology
+# __Dip Into Dev__
+&nbsp;
+## _Part 1: Technology and Terminology_
 or
-### How I Learned To Stop Worrying And Love The Code
+## _How I Learned To Stop Worrying And Love The Code_
 
 ---
 

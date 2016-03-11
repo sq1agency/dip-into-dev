@@ -17,8 +17,8 @@ routes.get('/', function* (){
   yield this.render('index', {title: config.site.name});
 });
 
-routes.get('/part1', function* (){
-  yield this.render('part1', {layout: "slides.hbs", title: config.site.name});
-});
+routes.get("/part1", main.partOne);
+routes.get("/part2", main.partTwo);
+
 
 app.use(routes.middleware());
