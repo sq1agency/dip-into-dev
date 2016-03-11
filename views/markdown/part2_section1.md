@@ -8,5 +8,12 @@ or
 
 ### Overview
 * What's the purpose of this training?
-	* Help everyone do their jobs better
-	* Make better and more informed choices
+	* To help you get to the point where you're able to start writing your own web applications
+
+---
+
+### Overview
+* What will we be covering?
+	* Practical examples of HTML, CSS, and JavaScript
+
+---
