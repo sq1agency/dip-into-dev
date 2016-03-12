@@ -26,3 +26,6 @@
 
 ### Exercise 4
 * Subject Area: JS
+
+### Exercise 5
+* Subject Area: JS
