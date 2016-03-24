@@ -43,4 +43,21 @@ The head section of a website typically contains the most important information 
 </html>
 {{/code}}
 
-Note: Point out the title tag section, as it will be used in the example.  Also talk about the meta section and what it's used for.
+Note: Point out the title tag section, as it will be used in the example.  Also talk about the meta section and what it's used for.  Perhaps talk about how the page is loaded in order from top to bottom?
+
+---
+
+### Exercise 1 - HTML
+
+The body section of a website typically contains everything else.  Most of what you see on a typical website is stored in the body.
+
+{{#code "html"}}
+<html>
+	<head>
+		<!--content goes here-->
+	</head>
+	<body>
+		<!--most of the actual page content goes here-->
+	</body>
+</html>
+{{/code}}
