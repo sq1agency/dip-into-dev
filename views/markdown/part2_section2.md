@@ -49,7 +49,7 @@ Note: Point out the title tag section, as it will be used in the example.  Also 
 
 ### Exercise 1 - HTML
 
-The body section of a website typically contains everything else.  Most of what you see on a typical website is stored in the body.
+The body section of a website typically contains everything else.  Most of what you see on a typical website is stored in the body.  Talk about what a title tag is, and where you see it on a webpage
 
 {{#code "html"}}
 <html>
@@ -106,6 +106,8 @@ Keep in mind that _title_ is like most tags in that it has an opening and a clos
 ### Exercise 1 - HTML
 
 Now that we've added a title, let's add some content.  We talked previous about separating content into sections, or _divisions_ using the _div_ tag.
+
+Note: TODO: replace with a H1 tag and briefly explain the reason for having it.
 
 ---
 
